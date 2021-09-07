@@ -18,11 +18,8 @@ const initialState = {
   cartOpen: false,
 };
 
-// TODO: To get a better understand of how a reducer works - add comments to the various actions in the reducer
 export const reducers = (state = initialState, action) => {
   switch (action.type) {
-    // TODO: Add a comment describing the functionality of the UPDATE_PRODUCTS case
-    // Your comment here
     case UPDATE_PRODUCTS:
       return {
         ...state,
@@ -93,8 +90,6 @@ export const reducers = (state = initialState, action) => {
         currentCategory: action.currentCategory,
       };
 
-    // TODO: Add a comment describing what the default case is for
-    // Your comment here
     default:
       return state;
   }

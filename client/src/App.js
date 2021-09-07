@@ -1,4 +1,5 @@
 import React from "react";
+import { Provider } from "react-redux";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import {
   ApolloClient,
@@ -16,7 +17,7 @@ import NoMatch from "./pages/NoMatch";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Nav from "./components/Nav";
-import { Provider } from "react-redux";
+
 import Success from "./pages/Success";
 import OrderHistory from "./pages/OrderHistory";
 
