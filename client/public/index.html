@@ -39,5 +39,18 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <script>
+     const store = Redux.createStore(reduxStore);
+     function render() {
+        const state = store.getState();
+        valueEl.innerHTML = state.value.toString();
+      }
+
+     
+      render();
+      store.subscribe(render);
+    </script>
   </body>
 </html>
+
